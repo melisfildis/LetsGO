@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./solution.css">
+    <title>Let's Go!</title>
+  <script>
+    function nextPage() {window.location.href = "yupi.html";}
+    function moveButton() {
+        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 75;
+        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 45;
+              document.getElementById('noButton').style.left =`${x}px`;
+              document.getElementById('noButton').style.top = `${y}px`;
+      }
+  </script>
+</head>
+<body>
+  <h1>Do You Wanna Hangout? </h1>
+  <div>
+    <img id="id"  src="icegif-1358.gif" alt="Puss In Boots GIF">
+  </div>
+  <div class="align">
+      <button class="hng" id="yesButton" onclick="nextPage()">Yes</button>
+      <button class="hng" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+  </div>
+</body>
+</html>

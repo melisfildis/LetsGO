@@ -1,0 +1,44 @@
+body{
+  background-color: rgb(145, 209, 145);
+}
+h1{
+  color: antiquewhite;
+  text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#id{
+  width: 300px;
+  height: 300px;
+}
+.hng{
+  background-color: #FFB6C1;
+  color:antiquewhite;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+}
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+}
+.align{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 10px;
+}
